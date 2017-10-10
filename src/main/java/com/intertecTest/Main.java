@@ -11,16 +11,20 @@ public class Main {
         try {
             System.out.print("Type in your username: ");
             String userName = br.readLine().toLowerCase();
-            Map result = util.checkUserName(userName);
-            Boolean success = (Boolean)result.keySet().toArray()[0];
-            List<String> suggestions = (List)result.get(success);
-            if (success != null) {
-                if (success)
-                    System.out.println("Your username has been created!");
-                else {
-                    System.out.println("The username you typed in is already in use. I suggest using one of the following:");
-                    for (String s : suggestions) {
-                        System.out.println(s.toString());
+            if (userName.length() < 6)
+                System.out.println("Username must be at least 6 characters long.");
+            else {
+                Map result = util.checkUserName(userName);
+                Boolean success = (Boolean) result.keySet().toArray()[0];
+                List<String> suggestions = (List) result.get(success);
+                if (success != null) {
+                    if (success)
+                        System.out.println("Your username has been created!");
+                    else {
+                        System.out.println("The username you typed in is already in use. I suggest using one of the following:");
+                        for (String s : suggestions) {
+                            System.out.println(s.toString());
+                        }
                     }
                 }
             }
