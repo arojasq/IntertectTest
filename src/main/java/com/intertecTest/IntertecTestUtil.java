@@ -1,14 +1,10 @@
 package com.intertecTest;
 import org.json.simple.JSONObject;
-import org.json.simple.JSONArray;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
+import com.intertecTest.IntertecTestStrings;
 
 /**
  * Created by andreyrojas on 10/10/17.
@@ -20,12 +16,13 @@ public class IntertecTestUtil {
     public List<String> getListFromFile(String fileName, String nodeName) {
         List<String> theList = new ArrayList<String>();
         try {
-            File theFile = new File(fileName);
+            ClassLoader classloader = Thread.currentThread().getContextClassLoader();
+            InputStream is = classloader.getResourceAsStream(fileName);
             JSONParser parser = new JSONParser();
-            Object jsonFile = parser.parse(new FileReader(theFile));
-            JSONObject obj = (JSONObject)jsonFile;
-            String users = (String)obj.get(nodeName);
-            theList = new ArrayList<String>(Arrays.asList(users.split(",")));
+            JSONObject obj = (JSONObject)parser.parse(new InputStreamReader(is, "UTF-8"));
+            String content = (String)obj.get(nodeName);
+            theList = new ArrayList<String>(Arrays.asList(content.split(",")));
+            is.close();
         }
         catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -42,12 +39,13 @@ public class IntertecTestUtil {
     private Long getSettingsFile(String fileName) {
         Long userNamesLength = 0L;
         try {
-            File theFile = new File(fileName);
+            ClassLoader classloader = Thread.currentThread().getContextClassLoader();
+            InputStream is = classloader.getResourceAsStream(fileName);
             JSONParser parser = new JSONParser();
-            Object jsonFile = parser.parse(new FileReader(theFile));
-            JSONObject obj = (JSONObject)jsonFile;
-            JSONObject settings = (JSONObject)obj.get("settings");
-            userNamesLength = (Long)settings.get("randomUserNames");
+            JSONObject obj = (JSONObject)parser.parse(new InputStreamReader(is, "UTF-8"));
+            JSONObject settings = (JSONObject)obj.get(IntertecTestStrings.SETTINGS_PARENT_NODE_NAME);
+            userNamesLength = (Long)settings.get(IntertecTestStrings.SETTINGS_CHILD_NODE_NAME);
+            is.close();
         }
         catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -62,16 +60,15 @@ public class IntertecTestUtil {
     }
 
     public Map checkUserName(String theUserName) {
-        String path = "./src/main/resources/";
         Boolean userNameExists = false;
         Boolean hasRestrictedWord = false;
         Map result = new HashMap();
         List<String> userNameSuggestions = new ArrayList<String>();
 
         try {
-            List<String> userList = getListFromFile(path + "userList.json", "users");
-            List<String> wordsList = getListFromFile(path + "restrictedWords.json", "words");
-            Long randomNamesLength = getSettingsFile(path + "settings.json");
+            List<String> userList = getListFromFile(IntertecTestStrings.USER_LIST_FILE_NAME, IntertecTestStrings.USER_LIST_NODE_NAME);
+            List<String> wordsList = getListFromFile(IntertecTestStrings.RESTRICTED_WORDS_FILE_NAME, IntertecTestStrings.RESTRICTED_WORDS_NODE_NAME);
+            Long randomNamesLength = getSettingsFile(IntertecTestStrings.SETTINGS_FILE_NAME);
             for (Integer j = 0; j < wordsList.size(); j++) {
                 if (theUserName.toLowerCase().contains(wordsList.get(j).toLowerCase())) {
                     System.out.println("The username you are tyring to create contains one or more restricted words.");
@@ -92,10 +89,10 @@ public class IntertecTestUtil {
                     userNameSuggestions = getRandomUserNames(theUserName,randomNamesLength);
                 else {
                     try {
-                        FileWriter file = new FileWriter(path + "userList.json");
+                        FileWriter file = new FileWriter(IntertecTestStrings.USER_LIST_FILE_NAME);
                         JSONObject obj = new JSONObject();
                         userList.add(theUserName);
-                        obj.put("users", String.join(",", userList));
+                        obj.put(IntertecTestStrings.USER_LIST_NODE_NAME, String.join(",", userList));
                         file.write(obj.toJSONString());
                         file.close();
                     }
