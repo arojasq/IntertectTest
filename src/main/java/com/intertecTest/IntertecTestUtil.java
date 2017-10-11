@@ -3,6 +3,8 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import java.io.*;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.*;
 import com.intertecTest.IntertecTestStrings;
 
@@ -13,16 +15,39 @@ public class IntertecTestUtil {
 
     public List<Integer> randomNumbers = new ArrayList<Integer>();
 
+    private String getJsonFilePath(String fileName) {
+        String filePath = "";
+        try {
+            File jarFile = new File(Main.class.getProtectionDomain().getCodeSource().getLocation().toURI().getPath());
+            filePath = jarFile.getParent() + File.separator + fileName;
+        }
+        catch(URISyntaxException e) {
+            e.printStackTrace();
+        }
+        return filePath;
+    }
+
     public List<String> getListFromFile(String fileName, String nodeName) {
         List<String> theList = new ArrayList<String>();
         try {
-            ClassLoader classloader = Thread.currentThread().getContextClassLoader();
-            InputStream is = classloader.getResourceAsStream(fileName);
+            String theFile = getJsonFilePath(fileName);
+            File tmpFile = new File(theFile);
             JSONParser parser = new JSONParser();
-            JSONObject obj = (JSONObject)parser.parse(new InputStreamReader(is, "UTF-8"));
+            ClassLoader loader;
+            InputStream is;
+            JSONObject obj;
+            if (!tmpFile.exists()) {
+                loader = Thread.currentThread().getContextClassLoader();
+                is = loader.getResourceAsStream(fileName);
+                obj = (JSONObject)parser.parse(new InputStreamReader(is, "UTF-8"));
+                is.close();
+            }
+            else
+                obj = (JSONObject)parser.parse(new FileReader(theFile));
+
             String content = (String)obj.get(nodeName);
             theList = new ArrayList<String>(Arrays.asList(content.split(",")));
-            is.close();
+
         }
         catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -89,7 +114,7 @@ public class IntertecTestUtil {
                     userNameSuggestions = getRandomUserNames(theUserName,randomNamesLength);
                 else {
                     try {
-                        FileWriter file = new FileWriter(IntertecTestStrings.USER_LIST_FILE_NAME);
+                        FileWriter file = new FileWriter(getJsonFilePath(IntertecTestStrings.USER_LIST_FILE_NAME));
                         JSONObject obj = new JSONObject();
                         userList.add(theUserName);
                         obj.put(IntertecTestStrings.USER_LIST_NODE_NAME, String.join(",", userList));
@@ -137,7 +162,7 @@ public class IntertecTestUtil {
                 t++;
             }
         }
-
+        Collections.sort(names);
         return names;
     }
 }

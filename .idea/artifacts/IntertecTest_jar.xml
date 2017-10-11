@@ -7,7 +7,9 @@
       </element>
       <element id="module-output" name="IntertecTest" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar" path-in-jar="/" />
-      <element id="dir-copy" path="$PROJECT_DIR$/src/main/resources" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/restrictedWords.json" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/settings.json" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/userList.json" />
     </root>
   </artifact>
 </component>

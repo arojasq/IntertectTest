@@ -7,23 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01fee0c7-fa25-489e-ae44-7a0053b8da7b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/IntertecTest_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/intertecTest/IntertecTestStrings.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/intertecTest/Main.class" afterPath="$PROJECT_DIR$/target/classes/com/intertecTest/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/IntertecTest_jar/IntertecTest.jar" afterPath="$PROJECT_DIR$/out/artifacts/IntertecTest_jar/IntertecTest.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/intertecTest/IntertecTestUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/intertecTest/IntertecTestUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/IntertecTest_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/IntertecTest_jar.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IntertecTest.iml" afterPath="$PROJECT_DIR$/IntertecTest.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/intertecTest/IntertecTestUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/intertecTest/IntertecTestUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/restrictedWords.json" afterPath="$PROJECT_DIR$/target/classes/restrictedWords.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/userList.json" afterPath="$PROJECT_DIR$/target/classes/userList.json" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/intertecTest/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1622#1623#0" expanded="true" />
@@ -62,25 +50,15 @@
       <file leaf-file-name="IntertecTestUtil.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/intertecTest/IntertecTestUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5365854">
-              <caret line="73" column="86" selection-start-line="73" selection-start-column="85" selection-end-line="73" selection-end-column="86" />
+            <state vertical-scroll-proportion="0.6081301">
+              <caret line="137" column="9" selection-start-line="137" selection-start-column="9" selection-end-line="137" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#367#376#0" expanded="true" />
-                <element signature="e#501#509#0" expanded="true" />
-                <element signature="e#2400#2408#0" expanded="true" />
-                <element signature="e#4777#4785#0" expanded="true" />
+                <element signature="e#424#433#0" expanded="true" />
+                <element signature="e#970#978#0" expanded="true" />
+                <element signature="e#3173#3181#0" expanded="true" />
+                <element signature="e#5567#5575#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IntertecTestStrings.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/intertecTest/IntertecTestStrings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -98,18 +76,8 @@
       <file leaf-file-name="restrictedWords.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/restrictedWords.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625">
-              <caret line="1" column="101" selection-start-line="1" selection-start-column="101" selection-end-line="1" selection-end-column="101" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userList.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/userList.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="60" selection-start-line="0" selection-start-column="60" selection-end-line="0" selection-end-column="60" />
+            <state vertical-scroll-proportion="-1.25">
+              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -146,6 +114,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/userList.json" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/intertecTest/IntertecTestStrings.java" />
+        <option value="$PROJECT_DIR$/target/userList.json" />
+        <option value="$PROJECT_DIR$/out/artifacts/IntertecTest_jar/userList.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/intertecTest/IntertecTestUtil.java" />
       </list>
     </option>
@@ -210,6 +180,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="1" />
     <option name="y" value="23" />
     <option name="width" value="2048" />
     <option name="height" value="1049" />
@@ -367,7 +338,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/userList.json" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -824,6 +795,9 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="01fee0c7-fa25-489e-ae44-7a0053b8da7b" name="Default" comment="" />
@@ -831,7 +805,7 @@
       <option name="number" value="Default" />
       <updated>1507215208021</updated>
       <workItem from="1507215209496" duration="7956000" />
-      <workItem from="1507663048018" duration="13948000" />
+      <workItem from="1507663048018" duration="17312000" />
     </task>
     <task id="LOCAL-00001" summary="More updates.">
       <created>1507223439210</created>
@@ -861,11 +835,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21904000" />
+    <option name="totallyTimeSpent" value="25268000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2048" height="1049" extended-state="6" />
-    <editor active="false" />
+    <frame x="1" y="23" width="2048" height="1049" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -877,7 +851,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32810867" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16201396" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16201396" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -909,15 +883,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/intertecTest/IntertecTestUtil.java</url>
-          <line>18</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="24" />
+      <option name="time" value="31" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -927,6 +893,8 @@
         <watch expression="System.getProperty(&quot;java.class.path&quot;)" language="JAVA" custom="" />
         <watch expression="new File(result)" language="JAVA" custom="" />
         <watch expression="new FileReader(result)" language="JAVA" custom="" />
+        <watch expression="Main.class.getProtectionDomain().getCodeSource().getLocation()" language="JAVA" custom="" />
+        <watch expression="tmpFile.exists()" language="JAVA" custom="" />
       </configuration>
     </watches-manager>
   </component>
@@ -989,26 +957,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/restrictedWords.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="1" column="101" selection-start-line="1" selection-start-column="101" selection-end-line="1" selection-end-column="101" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.2916665">
           <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/userList.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="60" selection-start-line="0" selection-start-column="60" selection-end-line="0" selection-end-column="60" />
           <folding />
         </state>
       </provider>
@@ -1037,15 +989,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/intertecTest/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/restrictedWords.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1622#1623#0" expanded="true" />
-            <element signature="e#1650#1651#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-1.25">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1057,16 +1005,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/intertecTest/IntertecTestUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/intertecTest/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5365854">
-          <caret line="73" column="86" selection-start-line="73" selection-start-column="85" selection-end-line="73" selection-end-column="86" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#367#376#0" expanded="true" />
-            <element signature="e#501#509#0" expanded="true" />
-            <element signature="e#2400#2408#0" expanded="true" />
-            <element signature="e#4777#4785#0" expanded="true" />
+            <element signature="e#1622#1623#0" expanded="true" />
+            <element signature="e#1650#1651#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/userList.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="60" selection-start-line="0" selection-start-column="60" selection-end-line="0" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/IntertecTest_jar/userList.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="76" selection-start-line="0" selection-start-column="76" selection-end-line="0" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/intertecTest/IntertecTestUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6081301">
+          <caret line="137" column="9" selection-start-line="137" selection-start-column="9" selection-end-line="137" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#424#433#0" expanded="true" />
+            <element signature="e#970#978#0" expanded="true" />
+            <element signature="e#3173#3181#0" expanded="true" />
+            <element signature="e#5567#5575#0" expanded="true" />
           </folding>
         </state>
       </provider>
